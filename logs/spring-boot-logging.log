@@ -4265,3 +4265,369 @@ org.postgresql.util.PSQLException: ERROR: column "date" is of type timestamp wit
 2017-09-17 10:56:34.118  INFO 7442 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2017-09-17 10:56:34.120  INFO 7442 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2017-09-17 10:56:34.156  INFO 7442 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2017-09-20 16:56:43.374  INFO 6414 --- [main] i.com.InteligentPotApplication           : Starting InteligentPotApplication on juranetbook-IdeaPad-S210-Touch with PID 6414 (/home/jura-netbook/Documents/JAVA/inteligent-pot/target/classes started by jura-netbook in /home/jura-netbook/Documents/JAVA/inteligent-pot)
+2017-09-20 16:56:43.452  INFO 6414 --- [main] i.com.InteligentPotApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 16:56:43.798  INFO 6414 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 16:56:43 CEST 2017]; root of context hierarchy
+2017-09-20 16:56:49.018  INFO 6414 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-09-20 16:56:49.044  INFO 6414 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 16:56:49.046  INFO 6414 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 16:56:49.307  INFO 6414 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 16:56:49.308  INFO 6414 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5521 ms
+2017-09-20 16:56:49.936  INFO 6414 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 16:56:49.950  INFO 6414 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 16:56:49.964  INFO 6414 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 16:56:49.965  INFO 6414 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 16:56:49.968  INFO 6414 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 16:56:52.172  INFO 6414 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-20 16:56:58.567  INFO 6414 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 16:57:01.127  INFO 6414 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 16:56:43 CEST 2017]; root of context hierarchy
+2017-09-20 16:57:01.322  INFO 6414 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[GET]}" onto public java.util.List<inteligentpot.com.core.domain.DataLogs> inteligentpot.com.controller.potController.getAllDL()
+2017-09-20 16:57:01.329  INFO 6414 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[POST]}" onto public inteligentpot.com.core.domain.DataLogs inteligentpot.com.controller.potController.createDL(inteligentpot.com.core.domain.DataLogs)
+2017-09-20 16:57:01.363  INFO 6414 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 16:57:01.365  INFO 6414 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 16:57:01.518  INFO 6414 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 16:57:01.521  INFO 6414 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 16:57:01.668  INFO 6414 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 16:57:02.541  INFO 6414 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 16:57:02.802  INFO 6414 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-09-20 16:57:02.828  INFO 6414 --- [main] i.com.InteligentPotApplication           : Started InteligentPotApplication in 20.319 seconds (JVM running for 22.975)
+2017-09-20 16:57:34.011  INFO 6414 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 16:57:34.013  INFO 6414 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 16:57:34.171  INFO 6414 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 156 ms
+2017-09-20 16:57:48.702  INFO 6414 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-09-20 16:57:48.703  INFO 6414 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 16:56:43 CEST 2017]; root of context hierarchy
+2017-09-20 16:57:48.706  INFO 6414 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-20 16:57:48.717  INFO 6414 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 16:57:52.196  INFO 6555 --- [main] i.com.InteligentPotApplication           : Starting InteligentPotApplication on juranetbook-IdeaPad-S210-Touch with PID 6555 (/home/jura-netbook/Documents/JAVA/inteligent-pot/target/classes started by jura-netbook in /home/jura-netbook/Documents/JAVA/inteligent-pot)
+2017-09-20 16:57:52.213  INFO 6555 --- [main] i.com.InteligentPotApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 16:57:52.340  INFO 6555 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 16:57:52 CEST 2017]; root of context hierarchy
+2017-09-20 16:57:55.352  INFO 6555 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-09-20 16:57:55.373  INFO 6555 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 16:57:55.374  INFO 6555 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 16:57:55.586  INFO 6555 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 16:57:55.586  INFO 6555 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3258 ms
+2017-09-20 16:57:55.897  INFO 6555 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 16:57:55.906  INFO 6555 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 16:57:55.908  INFO 6555 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 16:57:55.909  INFO 6555 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 16:57:55.911  INFO 6555 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 16:57:56.975  INFO 6555 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-20 16:57:58.814  INFO 6555 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 16:57:59.745  INFO 6555 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 16:57:52 CEST 2017]; root of context hierarchy
+2017-09-20 16:57:59.860  INFO 6555 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[GET]}" onto public java.util.List<inteligentpot.com.core.domain.DataLogs> inteligentpot.com.controller.potController.getAllDL()
+2017-09-20 16:57:59.864  INFO 6555 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[POST]}" onto public inteligentpot.com.core.domain.DataLogs inteligentpot.com.controller.potController.createDL(inteligentpot.com.core.domain.DataLogs)
+2017-09-20 16:57:59.869  INFO 6555 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 16:57:59.870  INFO 6555 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 16:57:59.927  INFO 6555 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 16:57:59.927  INFO 6555 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 16:58:00.021  INFO 6555 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 16:58:00.488  INFO 6555 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 16:58:00.565  INFO 6555 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-09-20 16:58:00.577  INFO 6555 --- [main] i.com.InteligentPotApplication           : Started InteligentPotApplication in 8.98 seconds (JVM running for 10.673)
+2017-09-20 17:02:30.535  INFO 6555 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 17:02:30.536  INFO 6555 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 17:02:30.559  INFO 6555 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2017-09-20 17:07:42.409  INFO 6555 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-09-20 17:07:42.417  INFO 6555 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 16:57:52 CEST 2017]; root of context hierarchy
+2017-09-20 17:07:42.422  INFO 6555 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-20 17:07:42.425  INFO 6555 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:07:46.285  INFO 6926 --- [main] i.com.InteligentPotApplication           : Starting InteligentPotApplication on juranetbook-IdeaPad-S210-Touch with PID 6926 (/home/jura-netbook/Documents/JAVA/inteligent-pot/target/classes started by jura-netbook in /home/jura-netbook/Documents/JAVA/inteligent-pot)
+2017-09-20 17:07:46.291  INFO 6926 --- [main] i.com.InteligentPotApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 17:07:46.414  INFO 6926 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:07:46 CEST 2017]; root of context hierarchy
+2017-09-20 17:07:48.992  INFO 6926 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-09-20 17:07:49.008  INFO 6926 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 17:07:49.010  INFO 6926 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 17:07:49.164  INFO 6926 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 17:07:49.165  INFO 6926 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2757 ms
+2017-09-20 17:07:49.452  INFO 6926 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 17:07:49.459  INFO 6926 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 17:07:49.462  INFO 6926 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 17:07:49.464  INFO 6926 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 17:07:49.465  INFO 6926 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 17:07:50.347  INFO 6926 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:07:51.958  INFO 6926 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:07:52.821  INFO 6926 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:07:46 CEST 2017]; root of context hierarchy
+2017-09-20 17:07:52.916  INFO 6926 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[GET]}" onto public java.util.List<inteligentpot.com.core.domain.DataLogs> inteligentpot.com.controller.potController.getAllDL()
+2017-09-20 17:07:52.920  INFO 6926 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[POST]}" onto public inteligentpot.com.core.domain.DataLogs inteligentpot.com.controller.potController.createDL(inteligentpot.com.core.domain.DataLogs)
+2017-09-20 17:07:52.924  INFO 6926 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 17:07:52.925  INFO 6926 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 17:07:53.015  INFO 6926 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:07:53.016  INFO 6926 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:07:53.111  INFO 6926 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:07:53.556  INFO 6926 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 17:07:53.646  INFO 6926 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-09-20 17:07:53.655  INFO 6926 --- [main] i.com.InteligentPotApplication           : Started InteligentPotApplication in 7.97 seconds (JVM running for 9.824)
+2017-09-20 17:08:04.754  INFO 6926 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 17:08:04.755  INFO 6926 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 17:08:04.776  INFO 6926 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-09-20 17:08:13.916  INFO 6926 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-09-20 17:08:13.916  INFO 6926 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:07:46 CEST 2017]; root of context hierarchy
+2017-09-20 17:08:13.922  INFO 6926 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-20 17:08:13.924  INFO 6926 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:08:18.384  INFO 7003 --- [main] i.com.InteligentPotApplication           : Starting InteligentPotApplication on juranetbook-IdeaPad-S210-Touch with PID 7003 (/home/jura-netbook/Documents/JAVA/inteligent-pot/target/classes started by jura-netbook in /home/jura-netbook/Documents/JAVA/inteligent-pot)
+2017-09-20 17:08:18.390  INFO 7003 --- [main] i.com.InteligentPotApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 17:08:18.550  INFO 7003 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:08:18 CEST 2017]; root of context hierarchy
+2017-09-20 17:08:20.976  INFO 7003 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-09-20 17:08:20.992  INFO 7003 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 17:08:20.994  INFO 7003 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 17:08:21.151  INFO 7003 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 17:08:21.152  INFO 7003 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2609 ms
+2017-09-20 17:08:21.441  INFO 7003 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 17:08:21.450  INFO 7003 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 17:08:21.451  INFO 7003 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 17:08:21.453  INFO 7003 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 17:08:21.453  INFO 7003 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 17:08:22.390  INFO 7003 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:08:24.076  INFO 7003 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:08:24.835  INFO 7003 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:08:18 CEST 2017]; root of context hierarchy
+2017-09-20 17:08:24.933  INFO 7003 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[GET]}" onto public java.util.List<inteligentpot.com.core.domain.DataLogs> inteligentpot.com.controller.potController.getAllDL()
+2017-09-20 17:08:24.936  INFO 7003 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[POST]}" onto public inteligentpot.com.core.domain.DataLogs inteligentpot.com.controller.potController.createDL(inteligentpot.com.core.domain.DataLogs)
+2017-09-20 17:08:24.940  INFO 7003 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 17:08:24.941  INFO 7003 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 17:08:24.996  INFO 7003 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:08:24.997  INFO 7003 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:08:25.067  INFO 7003 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:08:25.507  INFO 7003 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 17:08:25.589  INFO 7003 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-09-20 17:08:25.598  INFO 7003 --- [main] i.com.InteligentPotApplication           : Started InteligentPotApplication in 7.658 seconds (JVM running for 9.107)
+2017-09-20 17:08:34.690  INFO 7003 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 17:08:34.691  INFO 7003 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 17:08:34.726  INFO 7003 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2017-09-20 17:10:40.592  INFO 7003 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-09-20 17:10:40.596  INFO 7003 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:08:18 CEST 2017]; root of context hierarchy
+2017-09-20 17:10:40.599  INFO 7003 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-20 17:10:40.605  INFO 7003 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:10:43.018  INFO 7188 --- [main] i.com.InteligentPotApplication           : Starting InteligentPotApplication on juranetbook-IdeaPad-S210-Touch with PID 7188 (/home/jura-netbook/Documents/JAVA/inteligent-pot/target/classes started by jura-netbook in /home/jura-netbook/Documents/JAVA/inteligent-pot)
+2017-09-20 17:10:43.023  INFO 7188 --- [main] i.com.InteligentPotApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 17:10:43.148  INFO 7188 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:10:43 CEST 2017]; root of context hierarchy
+2017-09-20 17:10:46.357  INFO 7188 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-09-20 17:10:46.380  INFO 7188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 17:10:46.382  INFO 7188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 17:10:46.586  INFO 7188 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 17:10:46.587  INFO 7188 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3444 ms
+2017-09-20 17:10:46.854  INFO 7188 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 17:10:46.860  INFO 7188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 17:10:46.862  INFO 7188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 17:10:46.863  INFO 7188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 17:10:46.865  INFO 7188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 17:10:47.750  INFO 7188 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:10:49.444  INFO 7188 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:10:50.249  INFO 7188 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:10:43 CEST 2017]; root of context hierarchy
+2017-09-20 17:10:50.354  INFO 7188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[POST]}" onto public inteligentpot.com.core.domain.DataLogs inteligentpot.com.controller.potController.createDL(inteligentpot.com.core.domain.DataLogs)
+2017-09-20 17:10:50.356  INFO 7188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[GET]}" onto public java.util.List<inteligentpot.com.core.domain.DataLogs> inteligentpot.com.controller.potController.getAllDL()
+2017-09-20 17:10:50.360  INFO 7188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 17:10:50.361  INFO 7188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 17:10:50.417  INFO 7188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:10:50.418  INFO 7188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:10:50.483  INFO 7188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:10:50.983  INFO 7188 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 17:10:51.109  INFO 7188 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-09-20 17:10:51.122  INFO 7188 --- [main] i.com.InteligentPotApplication           : Started InteligentPotApplication in 8.525 seconds (JVM running for 9.578)
+2017-09-20 17:11:54.711  INFO 7188 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-09-20 17:11:54.712  INFO 7188 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:10:43 CEST 2017]; root of context hierarchy
+2017-09-20 17:11:54.716  INFO 7188 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-20 17:11:54.725  INFO 7188 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:11:57.170  INFO 7287 --- [main] i.com.InteligentPotApplication           : Starting InteligentPotApplication on juranetbook-IdeaPad-S210-Touch with PID 7287 (/home/jura-netbook/Documents/JAVA/inteligent-pot/target/classes started by jura-netbook in /home/jura-netbook/Documents/JAVA/inteligent-pot)
+2017-09-20 17:11:57.176  INFO 7287 --- [main] i.com.InteligentPotApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 17:11:57.311  INFO 7287 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:11:57 CEST 2017]; root of context hierarchy
+2017-09-20 17:12:00.287  INFO 7287 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-09-20 17:12:00.314  INFO 7287 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 17:12:00.316  INFO 7287 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 17:12:00.443  INFO 7287 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 17:12:00.444  INFO 7287 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3145 ms
+2017-09-20 17:12:00.668  INFO 7287 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 17:12:00.678  INFO 7287 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 17:12:00.681  INFO 7287 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 17:12:00.681  INFO 7287 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 17:12:00.682  INFO 7287 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 17:12:01.664  INFO 7287 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:12:03.421  INFO 7287 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:12:04.159  INFO 7287 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:11:57 CEST 2017]; root of context hierarchy
+2017-09-20 17:12:04.257  INFO 7287 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[POST]}" onto public inteligentpot.com.core.domain.DataLogs inteligentpot.com.controller.potController.createDL(inteligentpot.com.core.domain.DataLogs)
+2017-09-20 17:12:04.259  INFO 7287 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[GET]}" onto public java.util.List<inteligentpot.com.core.domain.DataLogs> inteligentpot.com.controller.potController.getAllDL()
+2017-09-20 17:12:04.263  INFO 7287 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 17:12:04.264  INFO 7287 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 17:12:04.330  INFO 7287 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:12:04.331  INFO 7287 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:12:04.392  INFO 7287 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:12:04.889  INFO 7287 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 17:12:05.110  INFO 7287 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-09-20 17:12:05.124  INFO 7287 --- [main] i.com.InteligentPotApplication           : Started InteligentPotApplication in 8.416 seconds (JVM running for 9.465)
+2017-09-20 17:12:30.795  INFO 7287 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 17:12:30.796  INFO 7287 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 17:12:30.823  INFO 7287 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2017-09-20 17:15:47.172  INFO 7287 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-09-20 17:15:47.172  INFO 7287 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:11:57 CEST 2017]; root of context hierarchy
+2017-09-20 17:15:47.181  INFO 7287 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-20 17:15:47.187  INFO 7287 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:15:49.285  INFO 7503 --- [main] i.com.InteligentPotApplication           : Starting InteligentPotApplication on juranetbook-IdeaPad-S210-Touch with PID 7503 (/home/jura-netbook/Documents/JAVA/inteligent-pot/target/classes started by jura-netbook in /home/jura-netbook/Documents/JAVA/inteligent-pot)
+2017-09-20 17:15:49.290  INFO 7503 --- [main] i.com.InteligentPotApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 17:15:49.452  INFO 7503 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:15:49 CEST 2017]; root of context hierarchy
+2017-09-20 17:15:51.845  INFO 7503 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-09-20 17:15:51.862  INFO 7503 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 17:15:51.864  INFO 7503 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 17:15:52.010  INFO 7503 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 17:15:52.011  INFO 7503 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2565 ms
+2017-09-20 17:15:52.243  INFO 7503 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 17:15:52.253  INFO 7503 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 17:15:52.254  INFO 7503 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 17:15:52.255  INFO 7503 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 17:15:52.256  INFO 7503 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 17:15:53.273  INFO 7503 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:15:54.438 ERROR 7503 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence ipot.hibernate_sequence
+2017-09-20 17:15:54.440 ERROR 7503 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: schema "ipot" does not exist
+2017-09-20 17:15:54.445 ERROR 7503 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: create sequence ipot.hibernate_sequence start 1 increment 1
+2017-09-20 17:15:54.446 ERROR 7503 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: schema "ipot" does not exist
+2017-09-20 17:15:54.447 ERROR 7503 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: create table ipot.data_logs (id int8 not null, date bytea, moisture int4 not null, temp float4 not null, primary key (id))
+2017-09-20 17:15:54.448 ERROR 7503 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: schema "ipot" does not exist
+  Position: 14
+2017-09-20 17:15:54.672  INFO 7503 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:15:55.415  INFO 7503 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:15:49 CEST 2017]; root of context hierarchy
+2017-09-20 17:15:55.510  INFO 7503 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[POST]}" onto public inteligentpot.com.core.domain.DataLogs inteligentpot.com.controller.potController.createDL(inteligentpot.com.core.domain.DataLogs)
+2017-09-20 17:15:55.511  INFO 7503 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[GET]}" onto public java.util.List<inteligentpot.com.core.domain.DataLogs> inteligentpot.com.controller.potController.getAllDL()
+2017-09-20 17:15:55.515  INFO 7503 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 17:15:55.516  INFO 7503 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 17:15:55.576  INFO 7503 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:15:55.577  INFO 7503 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:15:55.637  INFO 7503 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:15:56.082  INFO 7503 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 17:15:56.156  INFO 7503 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-09-20 17:15:56.163  INFO 7503 --- [main] i.com.InteligentPotApplication           : Started InteligentPotApplication in 7.275 seconds (JVM running for 8.257)
+2017-09-20 17:18:09.562  INFO 7503 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-09-20 17:18:09.563  INFO 7503 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:15:49 CEST 2017]; root of context hierarchy
+2017-09-20 17:18:09.566  INFO 7503 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-20 17:18:09.576  INFO 7503 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:18:13.661  INFO 7753 --- [main] i.com.InteligentPotApplication           : Starting InteligentPotApplication on juranetbook-IdeaPad-S210-Touch with PID 7753 (/home/jura-netbook/Documents/JAVA/inteligent-pot/target/classes started by jura-netbook in /home/jura-netbook/Documents/JAVA/inteligent-pot)
+2017-09-20 17:18:13.666  INFO 7753 --- [main] i.com.InteligentPotApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 17:18:13.794  INFO 7753 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:18:13 CEST 2017]; root of context hierarchy
+2017-09-20 17:18:16.261  INFO 7753 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-09-20 17:18:16.279  INFO 7753 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 17:18:16.280  INFO 7753 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 17:18:16.429  INFO 7753 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 17:18:16.430  INFO 7753 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2641 ms
+2017-09-20 17:18:16.653  INFO 7753 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 17:18:16.659  INFO 7753 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 17:18:16.660  INFO 7753 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 17:18:16.661  INFO 7753 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 17:18:16.662  INFO 7753 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 17:18:17.515  INFO 7753 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:18:18.589 ERROR 7753 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence ipot.hibernate_sequence
+2017-09-20 17:18:18.591 ERROR 7753 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "hibernate_sequence" does not exist
+2017-09-20 17:18:19.073  INFO 7753 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:18:19.841  INFO 7753 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:18:13 CEST 2017]; root of context hierarchy
+2017-09-20 17:18:19.938  INFO 7753 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[POST]}" onto public inteligentpot.com.core.domain.DataLogs inteligentpot.com.controller.potController.createDL(inteligentpot.com.core.domain.DataLogs)
+2017-09-20 17:18:19.940  INFO 7753 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[GET]}" onto public java.util.List<inteligentpot.com.core.domain.DataLogs> inteligentpot.com.controller.potController.getAllDL()
+2017-09-20 17:18:19.946  INFO 7753 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 17:18:19.948  INFO 7753 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 17:18:20.005  INFO 7753 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:18:20.006  INFO 7753 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:18:20.079  INFO 7753 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:18:20.531  INFO 7753 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 17:18:20.606  INFO 7753 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-09-20 17:18:20.613  INFO 7753 --- [main] i.com.InteligentPotApplication           : Started InteligentPotApplication in 7.463 seconds (JVM running for 8.777)
+2017-09-20 17:18:54.024  INFO 7753 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 17:18:54.026  INFO 7753 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 17:18:54.048  INFO 7753 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2017-09-20 17:20:12.755  INFO 7753 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-09-20 17:20:12.758  INFO 7753 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:18:13 CEST 2017]; root of context hierarchy
+2017-09-20 17:20:12.770  INFO 7753 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-20 17:20:12.772  INFO 7753 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:20:16.792  INFO 7893 --- [main] i.com.InteligentPotApplication           : Starting InteligentPotApplication on juranetbook-IdeaPad-S210-Touch with PID 7893 (/home/jura-netbook/Documents/JAVA/inteligent-pot/target/classes started by jura-netbook in /home/jura-netbook/Documents/JAVA/inteligent-pot)
+2017-09-20 17:20:16.797  INFO 7893 --- [main] i.com.InteligentPotApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 17:20:16.931  INFO 7893 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:20:16 CEST 2017]; root of context hierarchy
+2017-09-20 17:20:19.427  INFO 7893 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-09-20 17:20:19.444  INFO 7893 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 17:20:19.446  INFO 7893 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 17:20:19.620  INFO 7893 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 17:20:19.622  INFO 7893 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2700 ms
+2017-09-20 17:20:19.841  INFO 7893 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 17:20:19.847  INFO 7893 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 17:20:19.849  INFO 7893 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 17:20:19.849  INFO 7893 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 17:20:19.850  INFO 7893 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 17:20:20.706  INFO 7893 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:20:22.385  INFO 7893 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:20:23.182  INFO 7893 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:20:16 CEST 2017]; root of context hierarchy
+2017-09-20 17:20:23.280  INFO 7893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[POST]}" onto public inteligentpot.com.core.domain.DataLogs inteligentpot.com.controller.potController.createDL(inteligentpot.com.core.domain.DataLogs)
+2017-09-20 17:20:23.282  INFO 7893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[GET]}" onto public java.util.List<inteligentpot.com.core.domain.DataLogs> inteligentpot.com.controller.potController.getAllDL()
+2017-09-20 17:20:23.286  INFO 7893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 17:20:23.293  INFO 7893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 17:20:23.359  INFO 7893 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:20:23.359  INFO 7893 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:20:23.423  INFO 7893 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:20:23.864  INFO 7893 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 17:20:23.951  INFO 7893 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-09-20 17:20:23.961  INFO 7893 --- [main] i.com.InteligentPotApplication           : Started InteligentPotApplication in 7.879 seconds (JVM running for 9.102)
+2017-09-20 17:20:37.956  INFO 7893 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 17:20:37.957  INFO 7893 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 17:20:37.983  INFO 7893 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2017-09-20 17:22:31.655  INFO 7893 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-09-20 17:22:31.657  INFO 7893 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:20:16 CEST 2017]; root of context hierarchy
+2017-09-20 17:22:31.661  INFO 7893 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-20 17:22:31.663  INFO 7893 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:22:35.207  INFO 8052 --- [main] i.com.InteligentPotApplication           : Starting InteligentPotApplication on juranetbook-IdeaPad-S210-Touch with PID 8052 (/home/jura-netbook/Documents/JAVA/inteligent-pot/target/classes started by jura-netbook in /home/jura-netbook/Documents/JAVA/inteligent-pot)
+2017-09-20 17:22:35.212  INFO 8052 --- [main] i.com.InteligentPotApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 17:22:35.416  INFO 8052 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:22:35 CEST 2017]; root of context hierarchy
+2017-09-20 17:22:38.751  INFO 8052 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-09-20 17:22:38.779  INFO 8052 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 17:22:38.783  INFO 8052 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 17:22:38.979  INFO 8052 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 17:22:38.980  INFO 8052 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3571 ms
+2017-09-20 17:22:39.208  INFO 8052 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 17:22:39.220  INFO 8052 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 17:22:39.221  INFO 8052 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 17:22:39.222  INFO 8052 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 17:22:39.222  INFO 8052 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 17:22:40.247  INFO 8052 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:22:41.957  INFO 8052 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:22:42.773  INFO 8052 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:22:35 CEST 2017]; root of context hierarchy
+2017-09-20 17:22:42.878  INFO 8052 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[POST]}" onto public inteligentpot.com.core.domain.DataLogs inteligentpot.com.controller.potController.createDL(inteligentpot.com.core.domain.DataLogs)
+2017-09-20 17:22:42.880  INFO 8052 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[GET]}" onto public java.util.List<inteligentpot.com.core.domain.DataLogs> inteligentpot.com.controller.potController.getAllDL()
+2017-09-20 17:22:42.886  INFO 8052 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 17:22:42.895  INFO 8052 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 17:22:42.952  INFO 8052 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:22:42.953  INFO 8052 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:22:43.021  INFO 8052 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:22:43.465  INFO 8052 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 17:22:43.571  INFO 8052 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-09-20 17:22:43.579  INFO 8052 --- [main] i.com.InteligentPotApplication           : Started InteligentPotApplication in 8.798 seconds (JVM running for 10.154)
+2017-09-20 17:22:50.241  INFO 8052 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 17:22:50.242  INFO 8052 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 17:22:50.267  INFO 8052 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2017-09-20 17:22:56.057  INFO 8052 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-09-20 17:22:56.058  INFO 8052 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:22:35 CEST 2017]; root of context hierarchy
+2017-09-20 17:22:56.070  INFO 8052 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-20 17:22:56.079  INFO 8052 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:22:58.592  INFO 8124 --- [main] i.com.InteligentPotApplication           : Starting InteligentPotApplication on juranetbook-IdeaPad-S210-Touch with PID 8124 (/home/jura-netbook/Documents/JAVA/inteligent-pot/target/classes started by jura-netbook in /home/jura-netbook/Documents/JAVA/inteligent-pot)
+2017-09-20 17:22:58.597  INFO 8124 --- [main] i.com.InteligentPotApplication           : No active profile set, falling back to default profiles: default
+2017-09-20 17:22:58.753  INFO 8124 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:22:58 CEST 2017]; root of context hierarchy
+2017-09-20 17:23:01.842  INFO 8124 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-09-20 17:23:01.860  INFO 8124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-20 17:23:01.861  INFO 8124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-20 17:23:02.074  INFO 8124 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-20 17:23:02.075  INFO 8124 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3327 ms
+2017-09-20 17:23:02.459  INFO 8124 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 17:23:02.466  INFO 8124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 17:23:02.467  INFO 8124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 17:23:02.468  INFO 8124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 17:23:02.468  INFO 8124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 17:23:03.260  INFO 8124 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:23:04.646  INFO 8124 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-20 17:23:05.442  INFO 8124 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:22:58 CEST 2017]; root of context hierarchy
+2017-09-20 17:23:05.537  INFO 8124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[POST]}" onto public inteligentpot.com.core.domain.DataLogs inteligentpot.com.controller.potController.createDL(inteligentpot.com.core.domain.DataLogs)
+2017-09-20 17:23:05.539  INFO 8124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/temperature],methods=[GET]}" onto public java.util.List<inteligentpot.com.core.domain.DataLogs> inteligentpot.com.controller.potController.getAllDL()
+2017-09-20 17:23:05.544  INFO 8124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 17:23:05.545  INFO 8124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 17:23:05.612  INFO 8124 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:23:05.613  INFO 8124 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:23:05.679  INFO 8124 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 17:23:06.098  INFO 8124 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-20 17:23:06.193  INFO 8124 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-09-20 17:23:06.207  INFO 8124 --- [main] i.com.InteligentPotApplication           : Started InteligentPotApplication in 8.034 seconds (JVM running for 9.351)
+2017-09-20 17:23:09.799  INFO 8124 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-20 17:23:09.800  INFO 8124 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-20 17:23:09.821  INFO 8124 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2017-09-20 17:23:13.866  INFO 8124 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-09-20 17:23:13.867  INFO 8124 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145433b: startup date [Wed Sep 20 17:22:58 CEST 2017]; root of context hierarchy
+2017-09-20 17:23:13.870  INFO 8124 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-09-20 17:23:13.872  INFO 8124 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
