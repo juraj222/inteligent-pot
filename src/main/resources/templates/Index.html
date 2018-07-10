@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Spring Boot Thymeleaf Hello World Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css"
+	href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<link rel="stylesheet" th:href="@{/css/main.css}"
+	href="../../css/main.css" />
+
+<link rel="stylesheet" th:href="@{/lib/chartis/chartist.min.css}"
+	href="../../lib/chartis/chartist.min.css" />
+<!-- /.container -->
+<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript"
+	src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Spring Boot</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+
+		<div class="starter-template">
+			<h1>Spring Boot Web Thymeleaf Example</h1>
+			<script src="../../lib/chartis/chartist.min.js"></script>
+			<form method="GET" th:action="@{/motor}">
+				<button type="submit" name="submit" value="value">STATE</button>
+			</form>
+			<form id="run" method="GET" th:action="@{/motor/run}">
+				<button id="bRun" type="button" class="btn btn-primary"
+					name="submit" value="value">RUN</button>
+			</form>
+			<form id="stop" method="GET" th:action="@{/motor/stop}">
+				<button id="bStop" type="button" class="btn btn-primary"
+					name="submit" value="value">STOP</button>
+			</form>
+			<div class="ct-chart ct-golden-section" id="chart1"></div>
+			<script th:inline="javascript">
+				let interval;
+				function sendRequest(e) {
+					const formElement = $("#run");
+					$.get(formElement.attr("action"), function(data) {
+						console.log(data)
+					});
+					e.preventDefault();
+					return false;
+				}
+				function stopRequest() {
+					if (interval) {
+						clearInterval(interval);
+					}
+				}
+				$(function() {
+					$('#bStop').click(function(e) {
+						stopRequest();
+					});
+					$('#bRun').click(function(e) {
+						stopRequest();
+						interval = setInterval(() => sendRequest(e), 1000);
+						sendRequest(e);
+					});
+				});
+			</script>
+			<script th:inline="javascript">
+				/*<![CDATA[*/
+
+				var message = /*[[${message}]]*/'default';
+
+				var data = /*[[(${data})]]*/[ 0, 0, 0, 0 ];
+
+				/*]]>*/
+			</script>
+			<script th:inline="javascript">
+				/*<![CDATA[*/
+				var tempArray = [];
+				var dates = [];
+				for ( var dl in data) {
+					tempArray.push(data[dl]["temp"]);
+					dates.push(data[dl]["date"]["dayOfMonth"]);
+				}
+
+				// Initialize a Line chart in the container with the ID chart1
+				new Chartist.Line('#chart1', {
+					labels : dates,
+					series : [ tempArray ]
+				});
+				/*]]>*/
+			</script>
+		</div>
+
+	</div>
+
+
+</body>
+</html>

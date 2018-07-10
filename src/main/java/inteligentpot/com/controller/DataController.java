@@ -14,8 +14,8 @@ import inteligentpot.com.core.domain.DataLogs;
 import inteligentpot.com.core.service.DataLogsService;
 
 @Controller
-@RequestMapping("/temperature")
-public class TemperatureController {
+@RequestMapping("/data")
+public class DataController {
 	@Autowired
 	DataLogsService dataLogsService;
 
