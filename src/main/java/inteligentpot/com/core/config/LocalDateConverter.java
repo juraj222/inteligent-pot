@@ -7,10 +7,10 @@ import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
 
 import org.springframework.stereotype.Component;
-
+/*
 
 @Component
-/*
+
 @Converter(autoApply = true)
 public class LocalDateAttributeConverter implements AttributeConverter<LocalDate, Date> {
 	
@@ -23,7 +23,7 @@ public class LocalDateAttributeConverter implements AttributeConverter<LocalDate
     public LocalDate convertToEntityAttribute(Date sqlDate) {
     	return (sqlDate == null ? null : sqlDate.toLocalDate());
     }
-}*/
+}
 @Converter(autoApply = true)
 public class LocalDateConverter implements AttributeConverter<LocalDateTime, Timestamp> {
 	
@@ -36,4 +36,4 @@ public class LocalDateConverter implements AttributeConverter<LocalDateTime, Tim
     public LocalDateTime convertToEntityAttribute(Timestamp sqlTimestamp) {
     	return (sqlTimestamp == null ? null : sqlTimestamp.toLocalDateTime());
     }
-}
+}*/

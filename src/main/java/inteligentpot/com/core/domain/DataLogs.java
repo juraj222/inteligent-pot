@@ -13,8 +13,6 @@ import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import inteligentpot.com.core.config.LocalDateConverter;
-
 @Entity
 public class DataLogs implements Serializable {
 	private static final long serialVersionUID = -3846932714628990949L;
@@ -33,7 +31,6 @@ public class DataLogs implements Serializable {
 
 	@Column
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-	@Convert(converter = LocalDateConverter.class)
 	LocalDateTime date = LocalDateTime.now();
 
 	public Long getId() {
