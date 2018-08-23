@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import inteligentpot.com.core.domain.DataLogs;
+import inteligentpot.com.core.domain.MotorControl;
 import inteligentpot.com.core.service.DataLogsService;
 
 @Controller
@@ -19,12 +20,16 @@ import inteligentpot.com.core.service.DataLogsService;
 public class WebController {
 	@Autowired
 	DataLogsService dataLogsService;
+
+	@Autowired
+	MotorControl motorControl;
 	
 	@CrossOrigin
 	@RequestMapping(method = RequestMethod.GET)
 	public String index(Map<String, Object> model) {
 		List<DataLogs> dataLogs = dataLogsService.getAllDataLogs();
 		model.put("data", dataLogs);
+		model.put("motorState", motorControl.getMotorState());
 		return "index";
 	}
 }

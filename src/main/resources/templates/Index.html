@@ -16,6 +16,7 @@
 <script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript"
 	src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../lib/chartis/chartist.min.js"></script>
 </head>
 <body>
 
@@ -36,43 +37,54 @@
 	<div class="container">
 
 		<div class="starter-template">
-			<h1>Spring Boot Web Thymeleaf Example</h1>
-			<script src="../../lib/chartis/chartist.min.js"></script>
-			<form method="GET" th:action="@{/motor}">
-				<button type="submit" name="submit" value="value">STATE</button>
-			</form>
-			<form id="run" method="GET" th:action="@{/motor/run}">
-				<button id="bRun" type="button" class="btn btn-primary"
-					name="submit" value="value">RUN</button>
-			</form>
-			<form id="stop" method="GET" th:action="@{/motor/stop}">
-				<button id="bStop" type="button" class="btn btn-primary"
-					name="submit" value="value">STOP</button>
-			</form>
+			<h1>InteligentPot minimalistic</h1>
+			<table>
+				<tr>
+					<td>
+						<form id="run" method="GET" th:action="@{/motor/run}">
+							<button id="bRun" type="button" class="btn btn-primary"
+								name="submit" value="value">RUN</button>
+						</form>
+					</td>
+					<td>
+						<form id="stop" method="GET" th:action="@{/motor/stop}">
+							<button id="bStop" type="button" class="btn btn-primary"
+								name="submit" value="value">STOP</button>
+						</form>
+					</td>
+					<td>
+						<img id="motorState" src="img/red.jpg" style="width:100px"></img>
+						<script th:inline="javascript">
+							/*<![CDATA[*/
+			
+							var motorState = /*[[${motorState}]]*/'false';
+							if(motorState == true){
+								document.getElementById('motorState').src='img/green.jpg';
+							}else{
+								document.getElementById('motorState').src='img/red.jpg';
+							}
+			
+							/*]]>*/
+						</script>
+					</td>
+				</tr>
+			</table>
 			<div class="ct-chart ct-golden-section" id="chart1"></div>
 			<script th:inline="javascript">
-				let interval;
-				function sendRequest(e) {
-					const formElement = $("#run");
+				function sendRequest(e, formElement) {
 					$.get(formElement.attr("action"), function(data) {
 						console.log(data)
 					});
 					e.preventDefault();
-					return false;
-				}
-				function stopRequest() {
-					if (interval) {
-						clearInterval(interval);
-					}
 				}
 				$(function() {
 					$('#bStop').click(function(e) {
-						stopRequest();
+						sendRequest(e, $("#stop"));
+						document.getElementById('motorState').src='img/red.jpg';
 					});
 					$('#bRun').click(function(e) {
-						stopRequest();
-						interval = setInterval(() => sendRequest(e), 1000);
-						sendRequest(e);
+						sendRequest(e, $("#run"));
+						document.getElementById('motorState').src='img/green.jpg';
 					});
 				});
 			</script>
