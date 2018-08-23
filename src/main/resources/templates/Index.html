@@ -100,16 +100,23 @@
 			<script th:inline="javascript">
 				/*<![CDATA[*/
 				var tempArray = [];
+				var moistureArray = [];
 				var dates = [];
 				for ( var dl in data) {
 					tempArray.push(data[dl]["temp"]);
+					moistureArray.push(data[dl]["moisture"]);
 					dates.push(data[dl]["date"]["dayOfMonth"]);
 				}
 
 				// Initialize a Line chart in the container with the ID chart1
-				new Chartist.Line('#chart1', {
+				new Chartist.Line('.ct-chart',{
 					labels : dates,
-					series : [ tempArray ]
+					series : [ {value:tempArray},{value:moistureArray}  ]
+				}, {
+					fullWidth: true,
+					  chartPadding: {
+					    right: 40
+					  },
 				});
 				/*]]>*/
 			</script>
